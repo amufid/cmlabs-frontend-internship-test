@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Food Recipes and cooking tutorials" />
+    <link href="../assets/output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/index.css" />
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-food-logo-png-image_5687717.png"
+      type="image/x-icon"
+    />
+    <title>Mealapp</title>
+  </head>
+
+  <body>
+    <nav>
+      <div
+        class="w-full fixed flex flex-row justify-between items-center px-5 sm:px-24 h-20 border-b-2 bg-white z-20"
+      >
+        <a href="index.html"
+          ><h1 class="text-2xl font-bold text-amber-900">Mealapp</h1></a
+        >
+
+        <ul class="hidden gap-x-6 sm:flex font-semibold text-lg">
+          <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+          <li><a href="#" class="hover:text-green-500">Foods</a></li>
+          <li><a href="#" class="hover:text-green-500">Ingredients</a></li>
+          <li><a href="#" class="hover:text-green-500">Local Culinary</a></li>
+          <li><a href="#" class="hover:text-green-500">About</a></li>
+        </ul>
+        <div class="phone flex sm:hidden">
+          <div role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Foods</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Local Culinary</a></li>
+                <li><a href="#" class="hover:text-green-500">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        class="min-h-screen flex flex-col justify-between items-center pt-20"
+      >
+        <div class="slideshow-container">
+          <div class="mySlides roll-out">
+            <img
+              src="https://cdn1-production-images-kly.akamaized.net/HuNKLV5OnQXNM7rpkJQxipT1zzE=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4485302/original/008851000_1687970322-aa.jpg"
+              class="w-[880px] !h-[250px] sm:!h-[300px]"
+              alt="sate"
+            />
+          </div>
+          <div class="mySlides roll-out">
+            <img
+              src="https://ik.imagekit.io/waters2021/sehataqua/uploads/20240312090339_original.jpg?tr=w-660,h-371,q-50,fo-auto"
+              class="w-[880px] !h-[250px] sm:!h-[300px]"
+              alt="salad"
+            />
+          </div>
+          <div class="mySlides roll-out">
+            <img
+              src="https://asset.kompas.com/crops/KmIlSAv6lt4xo-65CPsmk9OXH6o=/0x0:740x493/1200x800/data/photo/2020/03/24/5e79ac7be84d3.jpg"
+              class="w-[880px] !h-[250px] sm:!h-[300px]"
+              alt="pizza"
+            />
+          </div>
+          <div class="relative text-center -top-10">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-4 text-red-500 mt-5 mb-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-soup"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 10a2 2 0 0 1 2 2v.5c0 1.694 -2.247 5.49 -3.983 6.983l-.017 .013v.504a2 2 0 0 1 -1.85 1.995l-.15 .005h-8a2 2 0 0 1 -2 -2v-.496l-.065 -.053c-1.76 -1.496 -3.794 -4.965 -3.928 -6.77l-.007 -.181v-.5a2 2 0 0 1 2 -2z"
+            />
+            <path
+              d="M11.417 3.188a1 1 0 1 1 1.166 1.624c-.375 .27 -.593 .706 -.583 1.209a1.4 1.4 0 0 0 .583 1.167a1 1 0 1 1 -1.166 1.624a3.38 3.38 0 0 1 -1.417 -2.791a3.4 3.4 0 0 1 1.417 -2.833"
+            />
+            <path
+              d="M15.417 3.188a1 1 0 1 1 1.166 1.624c-.375 .27 -.593 .706 -.583 1.209a1.4 1.4 0 0 0 .583 1.167a1 1 0 1 1 -1.166 1.624a3.38 3.38 0 0 1 -1.417 -2.791a3.4 3.4 0 0 1 1.417 -2.833"
+            />
+            <path
+              d="M7.417 3.188a1 1 0 1 1 1.166 1.624c-.375 .27 -.593 .706 -.583 1.209a1.4 1.4 0 0 0 .583 1.167a1 1 0 1 1 -1.166 1.624a3.38 3.38 0 0 1 -1.417 -2.791a3.4 3.4 0 0 1 1.417 -2.833"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-salad"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9.53 3.152l3.742 2.339q 1.492 -.491 3.472 -.491h2.256a1 1 0 0 1 1 1l-.001 1.336l-.05 .895l-.042 .585c-.037 .457 -.08 .84 -.134 1.185l.227 -.001a2 2 0 0 1 2 2v.5c0 1.694 -2.247 5.49 -3.983 6.983l-.017 .013v.504a2 2 0 0 1 -1.85 1.995l-.15 .005h-8a2 2 0 0 1 -2 -2v-.496l-.065 -.053c-1.76 -1.496 -3.794 -4.965 -3.928 -6.77l-.007 -.181v-.5a2 2 0 0 1 2 -2h.078a14 14 0 0 1 -.078 -1v-1a1 1 0 0 1 1 -1h1.755c.138 0 .287 .034 .44 .092l.835 -3.335a1 1 0 0 1 1.5 -.605m-2.193 5.847l-1.335 .001l.027 .42q .025 .292 .064 .58h.942q .078 -.533 .302 -1.001m10.663 -1.999h-1.256c-1.712 0 -3.003 .31 -3.922 .88a3.5 3.5 0 0 1 1.143 2.12h3.774c.127 -.615 .194 -1.4 .261 -2.714zm-7.5 2a1.5 1.5 0 0 0 -1.414 1h2.828a1.5 1.5 0 0 0 -.845 -.888l-.166 -.056a1.5 1.5 0 0 0 -.403 -.056m-.864 -3.424l-.415 1.665a3.5 3.5 0 0 1 1.502 -.234a6 6 0 0 1 .497 -.442z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-cookie"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M13.53 2.552l2.667 1.104a1 1 0 0 1 .414 1.53a3 3 0 0 0 3.492 4.604a1 1 0 0 1 1.296 .557l.049 .122a4 4 0 0 1 0 3.062l-.079 .151c-.467 .74 -.785 1.314 -.945 1.7c-.166 .4 -.373 1.097 -.613 2.073l-.047 .144a4 4 0 0 1 -2.166 2.164l-.139 .046c-1.006 .253 -1.705 .461 -2.076 .615c-.412 .17 -.982 .486 -1.696 .942l-.156 .082a4 4 0 0 1 -3.062 0l-.148 -.077c-.759 -.475 -1.333 -.793 -1.704 -.947c-.413 -.171 -1.109 -.378 -2.07 -.612l-.146 -.048a4 4 0 0 1 -2.164 -2.166l-.046 -.138c-.254 -1.009 -.463 -1.709 -.615 -2.078q -.256 -.621 -.942 -1.695l-.082 -.156a4 4 0 0 1 0 -3.062l.084 -.16c.447 -.692 .761 -1.262 .94 -1.692c.147 -.355 .356 -1.057 .615 -2.078l.045 -.138a4 4 0 0 1 2.166 -2.164l.141 -.047c.988 -.245 1.686 -.453 2.074 -.614c.395 -.164 .967 -.48 1.7 -.944l.152 -.08a4 4 0 0 1 3.062 0m-1.531 13.448a1 1 0 0 0 -1 1v.01a1 1 0 0 0 2 0v-.01a1 1 0 0 0 -1 -1m4 -3a1 1 0 0 0 -1 1v.01a1 1 0 0 0 2 0v-.01a1 1 0 0 0 -1 -1m-8 -1a1 1 0 0 0 -1 1v.01a1 1 0 0 0 2 0v-.01a1 1 0 0 0 -1 -1m4 -1a1 1 0 0 0 -1 1v.01a1 1 0 0 0 2 0v-.01a1 1 0 0 0 -1 -1m-1 -4c-.552 0 -1 .448 -1 1.01a1 1 0 1 0 2 -.01a1 1 0 0 0 -1 -1"
+            />
+          </svg>
+        </div>
+
+        <!-- <h3 class="my-5">mealapp API website</h3> -->
+        <h1 class="text-center text-3xl text-slate-800 font-bold mb-12">
+          See All The Delicious Foods
+        </h1>
+        <div class="container">
+          <div class="flex flex-col justify-center items-center">
+            <div id="loading" class="loader"></div>
+            <div id="failed"></div>
+            <div
+              class="max-w-5xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 items-center justify-center p-5 gap-4 text-center"
+              id="categories"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/categories.js"></script>
+  </body>
+
+  <footer>
+    <div
+      class="flex flex-col justify-start sm:justify-center sm:items-center bg-red-600 text-white py-10 px-20 gap-5"
+    >
+      <h3 class="text-2xl font-semibold">Mealapp</h3>
+      <div class="max-w-5xl flex flex-row justify-between text-lg">
+        <ul class="flex flex-col sm:flex-row gap-x-10">
+          <li><a href="#" class="hover:text-green-500">Home</a></li>
+          <li><a href="#" class="hover:text-green-500">Foods</a></li>
+          <li><a href="#" class="hover:text-green-500">Ingredients</a></li>
+          <li><a href="#" class="hover:text-green-500">Local Culinary</a></li>
+          <li><a href="#" class="hover:text-green-500">About</a></li>
+        </ul>
+      </div>
+      <p class="text-sm text-center">Copyright © Mealapp.</p>
+    </div>
+  </footer>
+</html>

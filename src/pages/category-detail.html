@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link href="../assets/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/index.css" />
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-food-logo-png-image_5687717.png"
+      type="image/x-icon"
+    />
+    <title>Foods</title>
+  </head>
+
+  <body>
+    <nav>
+      <div
+        class="w-full fixed flex flex-row justify-between items-center px-5 sm:px-20 h-20 border-b-2 bg-white z-20"
+      >
+        <a href="index.html"
+          ><h1 class="text-2xl font-bold text-amber-900">Mealapp</h1></a
+        >
+        <ul class="hidden gap-x-6 sm:flex font-semibold text-lg">
+          <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+          <li><a href="#" class="hover:text-green-500">Foods</a></li>
+          <li><a href="#" class="hover:text-green-500">Ingredients</a></li>
+          <li><a href="#" class="hover:text-green-500">Local Culinary</a></li>
+          <li><a href="#" class="hover:text-green-500">About</a></li>
+        </ul>
+        <div class="phone flex sm:hidden">
+          <div role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Foods</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Local Culinary</a></li>
+                <li><a href="#" class="hover:text-green-500">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="min-h-screen flex flex-col items-center pt-20">
+        <div class="flex flex-row w-96 sm:w-[55rem] py-5 items-center gap-x-3">
+          <svg
+            width="17px"
+            height="17px"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+              fill="#000000"
+            />
+          </svg>
+          <a href="#" class="font-semibold cursor-default"> Home </a>
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 6L15 12L9 18"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="index.html" class="font-semibold hover:text-green-500">
+            Foods
+          </a>
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 6L15 12L9 18"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a
+            href="#"
+            class="cursor-default text-slate-500"
+            id="breadcrumbs-category"
+          ></a>
+        </div>
+        <div class="w-96 flex sm:w-[55rem] py-5">
+          <h1 class="text-3xl text-left" id="title-meals"></h1>
+        </div>
+        <div id="loading" class="loader flex"></div>
+        <div id="failed"></div>
+        <div class="container">
+          <div class="flex justify-center">
+            <div
+              class="max-w-5xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 items-center justify-center p-5 gap-4"
+              id="meals"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/category-detail.js"></script>
+  </body>
+
+  <footer>
+    <div
+      class="flex flex-col justify-start sm:justify-center sm:items-center bg-red-600 text-white py-10 px-20 gap-5"
+    >
+      <h3 class="text-2xl font-semibold">Mealapp</h3>
+      <div class="max-w-5xl flex flex-row justify-between text-lg">
+        <ul class="flex flex-col sm:flex-row gap-x-10">
+          <li><a href="#" class="hover:text-green-500">Home</a></li>
+          <li><a href="#" class="hover:text-green-500">Foods</a></li>
+          <li><a href="#" class="hover:text-green-500">Ingredients</a></li>
+          <li><a href="#" class="hover:text-green-500">Local Culinary</a></li>
+          <li><a href="#" class="hover:text-green-500">About</a></li>
+        </ul>
+      </div>
+      <p class="text-sm text-center">Copyright © Mealapp.</p>
+    </div>
+  </footer>
+</html>
