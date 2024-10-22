@@ -31,7 +31,7 @@ $(document).ready(function () {
     } else {
       categories.forEach(function (category) {
         const categoryItem = `
-        <a href="category-detail.html?category=${category.strCategory}">
+        <a href="./pages/category-detail.html?category=${category.strCategory}">
             <div 
               class="w-52 h-24 items-center rounded-lg bg-slate-400 hover:bg-slate-200 cursor-pointer overflow-hidden shadow-lg"
             >
