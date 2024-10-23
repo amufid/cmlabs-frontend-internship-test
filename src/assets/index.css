@@ -99,17 +99,17 @@ body {
 
 #menu {
    position: absolute;
-   width: 100%;
+   width: 110%;
    height: 100vh;
    box-shadow: 0 0 10px #85888C;
-   margin: 0px 0px 0 -363px;
+   margin: 0px 0px 0 -380px;
    padding: 50px;
    padding-top: 100px;
    top: -3px;
    background-color: #F5F6FA;
    -webkit-font-smoothing: antialiased;
    transform-origin: 0% 0%;
-   transform: translate(100%, 0);
+   transform: translate(120%, 0);
    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 

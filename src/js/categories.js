@@ -31,20 +31,20 @@ $(document).ready(function () {
     } else {
       categories.forEach(function (category) {
         const categoryItem = `
-        <a href="./pages/category-detail.html?category=${category.strCategory}">
-            <div 
-              class="w-52 h-24 items-center rounded-lg bg-slate-400 hover:bg-slate-200 cursor-pointer overflow-hidden shadow-lg"
-            >
-               <h3 class="relative top-9 text-white font-bold text-center z-10 hover:text-green-400">
-                  ${category.strCategory}
-               </h3>
-               <img 
-                  src='${category.strCategoryThumb}' 
-                  class="w-64 h-28 relative rounded-lg -top-8 brightness-50 hover:brightness-100 object-cover 
-                  transform transition-transform duration-500 hover:scale-110"
-               />
-            </div>
-        </a>
+            <a href="./pages/category-detail.html?category=${category.strCategory}">
+               <div 
+               class="w-44 sm:w-52 h-24 items-center rounded-lg bg-slate-400 hover:bg-slate-200 cursor-pointer overflow-hidden shadow-lg"
+               >
+                  <h3 class="relative top-9 text-white font-bold text-center z-10 hover:text-green-400">
+                     ${category.strCategory}
+                  </h3>
+                  <img 
+                     src='${category.strCategoryThumb}' 
+                     class="w-64 h-28 relative rounded-lg -top-8 brightness-50 hover:brightness-100 object-cover 
+                     transform transition-transform duration-500 hover:scale-110"
+                  />
+               </div>
+            </a>
         `;
         categoriesList.append(categoryItem);
       });
@@ -54,6 +54,7 @@ $(document).ready(function () {
   fetchCategories();
 });
 
+// slideshow image
 let slideIndex = 0;
 showSlides();
 
